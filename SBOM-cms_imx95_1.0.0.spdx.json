@@ -1,0 +1,138 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2026-07-28T02:13:10Z",
+    "creators": [
+      "Organization: NXP"
+    ],
+    "licenseListVersion": "3.28"
+  },
+  "name": "CMS-DEMO-cms_imx95_1.0.0",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://nxp.com/spdx/a10b258a-fc80-464b-acd9-686a02c2faf9",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9",
+      "name": "CMS-DEMO",
+      "versionInfo": "cms_imx95_1.0.0",
+      "licenseConcluded": "(BSD-2-Clause)",
+      "licenseDeclared": "(BSD-2-Clause)",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: CMS-DEMO",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---5227df06-ae18-463b-bbf1-092765695679",
+      "name": "libcamera-apps",
+      "versionInfo": "1.4.4",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "homepage": "https://github.com/raspberrypi/libcamera-apps",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: fedora",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "de21a9eb-54b1-4cce-a462-80d5cea891df",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:rpm/fedora/libcamera-apps@1.4.4-1.fc41?arch=i686",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---d806afeb-0049-4cf9-b477-e0b4cc0c1025",
+      "name": "raspberry-pi-camera/raspindi",
+      "versionInfo": "v3.0.0",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: raspberry-pi-camera",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "508d8298-1a27-4dab-94ed-0f1c20cf5392",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/raspberry-pi-camera/raspindi@v3.0.0",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---3c3f738d-e062-4810-b081-6a1c04369ae4",
+      "name": "raspberry-pi-camera/raspindi",
+      "versionInfo": "v3.0.1",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: raspberry-pi-camera",
+      "supplier": "NOASSERTION",
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "9e3aaf14-12fb-47b2-8e53-3b6e55dc27c9",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/raspberry-pi-camera/raspindi@v3.0.1",
+          "referenceType": "purl"
+        }
+      ],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---c33a2963-15d6-4a83-8664-bd5e0fd3344e",
+      "name": "rpicam-apps",
+      "versionInfo": "1.5.3",
+      "licenseConcluded": "BSD-2-Clause",
+      "licenseDeclared": "BSD-2-Clause",
+      "homepage": "https://github.com/raspberrypi/rpicam-apps/",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: unknown",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---3c3f738d-e062-4810-b081-6a1c04369ae4"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---5227df06-ae18-463b-bbf1-092765695679"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---c33a2963-15d6-4a83-8664-bd5e0fd3344e"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-a10b258a-fc80-464b-acd9-686a02c2faf9---d806afeb-0049-4cf9-b477-e0b4cc0c1025"
+    }
+  ]
+}
