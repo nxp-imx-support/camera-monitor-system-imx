@@ -1,6 +1,6 @@
 # i.MX95 CMS Demo
 <!----- Boards ----->
-[![License badge](https://img.shields.io/badge/License-BSD_2_Clause-red)](./BSD_3_Clause.txt) [![Board badge](https://img.shields.io/badge/Board-i.MX_95-blue)](https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-9-processors/i-mx-95-applications-processor-family-high-performance-safety-enabled-platform-with-eiq-neutron-npu:iMX95)
+[![License badge](https://img.shields.io/badge/License-BSD_2_Clause-red)](https://spdx.org/licenses/BSD-2-Clause.html) [![Board badge](https://img.shields.io/badge/Board-i.MX_95-blue)](https://www.nxp.com/products/processors-and-microcontrollers/arm-processors/i-mx-applications-processors/i-mx-9-processors/i-mx-95-applications-processor-family-high-performance-safety-enabled-platform-with-eiq-neutron-npu:iMX95)
 ![Language badge](https://img.shields.io/badge/Language-C++-yellow) ![Category badge](https://img.shields.io/badge/Category-Multimedia-green)
 
 This is a suite of libcamera-based camera applications optimized for NXP platforms. This implementation demonstrates a Camera Monitoring System (CMS) on the NXP i.MX95 EVK with dual-camera support, ultra-low latency display, and advanced lens contamination detection.
@@ -38,7 +38,7 @@ The CMS demo, built on the NXP i.MX95 EVK, delivers real-time vision performance
 
 Unified DMA buffer shared across ISP/GPU/DPU/VPU — no memcpy, no format conversion. Optimize hardware performance to its fullest potential.
 
-  ![test](image/Unified_DMA_buffer.jpg)
+  ![test](images/Unified_DMA_buffer.jpg)
 
 
 ## 3. Hardware Requirements
@@ -61,9 +61,9 @@ i.MX BSP  			| [LF-6.18.2-1.0.0](https://www.nxp.com/design/design-center/softwa
 
 ### System Architect:
  
-  ![test](image/CMS_system_architect.jpg)
+  ![test](images/CMS_system_architect.jpg)
 
-  ![test](image/Block_Diagram.jpg)
+  ![test](images/Block_Diagram.jpg)
 
 >**NOTE:** FFmpeg is used for MP4 video encoding; it is optional and can be removed.
 
@@ -202,13 +202,13 @@ It divides the image into 64x64 pixel grids, and compute per-grid metrics:
 - Gradient: Average edge strength.
 - Brightness: Average Y value.
 
-  ![test](image/image_grids.jpg)
+  ![test](images/image_grids.jpg)
 
 ### Temporal Stability Tracking
 
 The temporal stability filter uses a sophisticated region matching algorithm:
 
-  ![test](image/Spatial_Temporal_Filter.jpg)
+  ![test](images/Spatial_Temporal_Filter.jpg)
 
 ## 8. Results
 
@@ -216,7 +216,7 @@ The temporal stability filter uses a sophisticated region matching algorithm:
 
 The following image shows the CMS demo running in dual-camera mode with DRM preview:
 
-![CMS Demo Result](image/Drm_result.jpg)
+![CMS Demo Result](images/Drm_result.jpg)
 
 
 ## 9. Troubleshooting
@@ -260,9 +260,9 @@ Different BSP versions may require different implementation approaches.
 ``` 
 Additionally, the J2 pin 2 of both camera modules must be connected together.
 
-![Frame_synchronized_1](image/frame_synchronized_1.jpg)
+![Frame_synchronized_1](images/frame_synchronized_1.jpg)
 
-![Frame_synchronized_2](image/frame_synchronized_2.jpg)
+![Frame_synchronized_2](images/frame_synchronized_2.jpg)
 
 ## 11. Release Notes
 
